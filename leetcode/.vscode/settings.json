@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "*.dbclient-js": "javascript",
+        "barrier": "cpp",
+        "chrono": "cpp",
+        "random": "cpp",
+        "latch": "cpp",
+        "limits": "cpp",
+        "semaphore": "cpp",
+        "valarray": "cpp"
+    }
+}

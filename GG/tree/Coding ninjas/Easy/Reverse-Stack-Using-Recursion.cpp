@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+void insertAtBootom(stack<int> &stack,int element){
+    if(stack.empty()){
+        stack.push(element);
+        return;
+    }
+    int num=stack.top();
+    stack.pop();
+    insertAtBootom(stack,element);
+    stack.push(num);
+}
+void reverseStack(stack<int> &stack) {
+    // Write your code here
+
+    if(stack.empty()){
+        return;
+    }
+    int num=stack.top();
+    stack.pop();
+    reverseStack(stack);
+    insertAtBootom(stack,num);
+}
