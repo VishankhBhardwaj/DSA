@@ -22,7 +22,7 @@ public:
                 if(freq[curr]<count) return false;
                 freq[curr]-=count;
             }
-
+            minHeap.pop();
         }
         return true;
     }
